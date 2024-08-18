@@ -3,12 +3,12 @@ CDCL SAT solver with added permanent learnt clauses
 
 
 These solvers are built based on the winner of the silver
-medal in the main track of the [2020 SAT Solver Competition](https://helda.helsinki.fi/items/3bd6f832-e0cf-4db9-bf9b-89764dea3a72). A member of the MapleSAT family of
+medal in the main track of the [2020 SAT Solver Competition]([https://helda.helsinki.fi/items/3bd6f832-e0cf-4db9-bf9b-89764dea3a72](https://satcompetition.github.io/2020/)). A member of the MapleSAT family of
 solvers that has been improved over the last few years.
-They modify the clause maintenance strategy in different ways to learn and store more valuable clauses.
-You can read about it in more details [here] ([https://www.cs.sfu.ca/~mitchell/papers/sat19-deletion.pdf](https://arxiv.org/abs/2110.14187)). 
+We modify the clause maintenance strategy in different ways to learn and store more valuable clauses.
+You can read about it in more detail [here] ([https://www.cs.sfu.ca/~mitchell/papers/sat19-deletion.pdf](https://arxiv.org/abs/2110.14187)). 
 
-Highe-Centrality Permanent Clauses
+High-Centrality Permanent Clauses
 ------------------------
 
 The centrality of a clause is the mean betweenness centrality
@@ -18,7 +18,7 @@ betweenness centrality of a vertex (variable) v is the number
 of shortest paths between pairs of vertices excluding v, that
 visit v. We use Brandes algorithm to compute centrality values.
 High centrality (HC) learned clauses (those with centrality greater than a threshold CT), are stored in
-permanent clause storage, regardless of their LBD. the solver, `Maple_MBDR_Cent_PERM_10K` stores at
+permanent clause storage, regardless of their LBD. The solver, `Maple_MBDR_Cent_PERM_10K` stores at
 most the first 10,000 HC clauses permanently.
 
 BackJump Learning Scheme
