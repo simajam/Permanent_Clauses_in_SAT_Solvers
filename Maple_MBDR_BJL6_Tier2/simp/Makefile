@@ -1,4 +1,4 @@
-EXEC      = glucose
+EXEC      = M_Permanent
 DEPDIR    = mtl utils core
 MROOT     = ../
 
